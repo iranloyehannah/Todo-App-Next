@@ -1,7 +1,10 @@
 import { useState, useMemo } from "react";
 import { useTodo } from "../hooks/useTodo";
-import TodoItem from "../components/TodoItem";
-import AddTodoDialog from "../components/AddTodoDialog";
+import { 
+  TodoItem,
+  AddTodoDialog,
+  SearchAndFilter
+} from "../components";
 import { 
   Container, 
   Typography, 
@@ -15,7 +18,6 @@ import {
   useTheme,
   useMediaQuery
 } from '@mui/material';
-import SearchAndFilter from '../components/SearchAndFilter';
 
 const ITEMS_PER_PAGE = 10;
 
