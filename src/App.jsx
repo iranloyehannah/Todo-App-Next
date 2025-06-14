@@ -8,6 +8,7 @@ import TodoList from './pages/TodoList';
 import TodoDetails from './pages/TodoDetails';
 import ErrorTest from './pages/ErrorTest';
 import NotFound from './pages/NotFound';
+import TestRoutes from './pages/TestRoutes';
 import './index.css';
 
 const queryClient = new QueryClient({
@@ -36,6 +37,7 @@ function App() {
                 <Route path="/" element={<TodoList />} />
                 <Route path="/todo/:id" element={<TodoDetails />} />
                 <Route path="/error-test" element={<ErrorTest />} />
+                <Route path="/test-routes" element={<TestRoutes />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Router>
