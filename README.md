@@ -1,6 +1,6 @@
-# React Todo Application
+# NextJS Todo Application
 
-A modern, accessible Todo application built with React and Material-UI, featuring real-time search, filtering, and offline support.
+A modern, accessible Todo application built with NextJs, TypeScript, Material-UI and Tailwindcss featuring real-time search, filtering, and offline support.
 
 ## Features
 
@@ -15,7 +15,8 @@ A modern, accessible Todo application built with React and Material-UI, featurin
 
 ## Tech Stack
 
-- React 19
+- NextJS 14
+- TypeScript v5
 - Material-UI (MUI) v7
 - Tailwind v4
 - React Router v7
@@ -29,12 +30,12 @@ A modern, accessible Todo application built with React and Material-UI, featurin
 ```
 my-app/
 ├── src/
+│   ├── app/           
 │   ├── components/     # Reusable UI components
 │   ├── pages/         # Page components
 │   ├── hooks/         # Custom React hooks
 │   ├── utils/         # Utility functions
 │   ├── assets/        # Static assets
-│   ├── App.jsx        # Root component
 │   ├── main.jsx       # Entry point
 │   └── theme.js       # MUI theme configuration
 ├── public/            # Static files
@@ -148,10 +149,10 @@ The preview will be available at `http://localhost:4173`.
 5. Open a Pull Request
 
 ## Acknowledgments
-
 - Material-UI for the component library
 - Vite for the build tooling
-- React Router for navigation
+- NextJS for the framework
+- Next Router for navigation
 - Tanstack Query for data management
 
 ## API Documentation
@@ -179,10 +180,7 @@ This API is public and does not require authentication.
 - No due dates or reminders
 - Offline mode has limited functionality for complex operations
 
-### Technical Limitations
 
-- No server-side validation
-- No user authentication
 
 ### Planned Features
 
