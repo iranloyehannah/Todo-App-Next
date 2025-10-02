@@ -4,7 +4,7 @@ import { Box, Typography, Button, Paper } from '@mui/material';
 import { useRouter } from 'next/navigation';
 import SearchOffIcon from '@mui/icons-material/SearchOff';
 
-// Custom 404 page for handling undefined routes
+
 const NotFound = () => {
   const router = useRouter();
 

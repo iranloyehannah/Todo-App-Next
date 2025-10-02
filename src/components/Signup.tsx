@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
-import { registerUser } from "../auth"; 
+import { Box, Button } from "@mui/material";
+import { registerUser } from "../auth";
 import { FirebaseError } from "firebase/app";
-import { useRouter } from "next/navigation"; 
+import { useRouter } from "next/navigation";
 
 const Signup: React.FC = () => {
   const [email, setEmail] = useState<string>("");
@@ -19,7 +19,6 @@ const Signup: React.FC = () => {
     } catch (error: unknown) {
       if (error instanceof FirebaseError) {
         if (error.code === "auth/email-already-in-use") {
-
           alert("Email already registered. Redirecting you to login...");
           router.push("/login");
         } else {
@@ -94,12 +93,49 @@ const Signup: React.FC = () => {
           />
         </div>
 
-        <button
+        <Button
+          variant="contained"
           type="submit"
-          className="mt-4 bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 transition"
+          sx={{
+            background: "linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)",
+            color: "white",
+
+            py: 1.5,
+            fontSize: "14px",
+            fontWeight: 600,
+            "&:hover": {
+              background: "bg-gradient-to-r from-blue-500 to-cyan-500 text-white ",
+              transform: "translateY(-1px)",
+              boxShadow: "0 4px 12px rgba(33, 150, 243, 0.3)",
+            },
+            transition: "all 0.2s ease-in-out",
+          }}
         >
           Sign Up
-        </button>
+        </Button>
+
+        <p>Already have an Account?</p>
+        <Button
+          variant="contained"
+          type="submit"
+          onClick={() => router.push("/login")} 
+          sx={{
+            background: "linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)",
+            color: "white",
+
+            py: 1.5,
+            fontSize: "14px",
+            fontWeight: 600,
+            "&:hover": {
+              background: "bg-gradient-to-r from-blue-500 to-cyan-500 text-white",
+              transform: "translateY(-1px)",
+              boxShadow: "0 4px 12px rgba(33, 150, 243, 0.3)",
+            },
+            transition: "all 0.2s ease-in-out",
+          }}
+        >
+          Sign In
+        </Button>
       </form>
     </Box>
   );

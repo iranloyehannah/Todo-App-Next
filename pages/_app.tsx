@@ -4,7 +4,7 @@ import { AuthProvider } from '@/components/AuthProvider'
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material'
 import { useState } from 'react'
 
-// Create theme
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -28,5 +28,6 @@ export default function App({ Component, pageProps }: AppProps) {
     </QueryClientProvider>
   )
 }
+
 
 

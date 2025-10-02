@@ -27,10 +27,14 @@ export default function LoginPage() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <ErrorBoundary>
-          <Box sx={{ 
-            minHeight: '100vh',
-            background: 'linear-gradient(135deg, #BBDEFB 0%, #64B5F6 100%)'
-          }}>
+          <Box
+            sx={{
+              minHeight: '100vh',
+              display: 'flex',             
+              alignItems: 'center',        
+              background: 'linear-gradient(135deg, #BBDEFB 0%, #64B5F6 100%)'
+            }}
+          >
             <Login />
           </Box>
         </ErrorBoundary>
