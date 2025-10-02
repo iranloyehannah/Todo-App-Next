@@ -1,0 +1,7 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/todo/[id]/page": "/todo/[id]",
+  "/page": "/",
+  "/todo-list/page": "/todo-list",
+  "/login/page": "/login"
+}
