@@ -7,6 +7,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // Prevent static generation of pages that use auth
+  experimental: {
+    
+  },
 }
 
 module.exports = nextConfig

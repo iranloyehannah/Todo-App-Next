@@ -1,6 +1,7 @@
 {
   "version": 3,
   "pages404": true,
+  "appType": "hybrid",
   "caseSensitive": false,
   "basePath": "",
   "redirects": [
@@ -8,6 +9,7 @@
       "source": "/:path+/",
       "destination": "/:path+",
       "internal": true,
+      "priority": true,
       "statusCode": 308,
       "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
     }
@@ -54,6 +56,12 @@
       "namedRegex": "^/login(?:/)?$"
     },
     {
+      "page": "/LoginPage",
+      "regex": "^/LoginPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/LoginPage(?:/)?$"
+    },
+    {
       "page": "/NotFound",
       "regex": "^/NotFound(?:/)?$",
       "routeKeys": {},
@@ -80,10 +88,11 @@
     "didPostponeHeader": "x-nextjs-postponed",
     "contentTypeHeader": "text/x-component",
     "suffix": ".rsc",
-    "prefetchSuffix": ".prefetch.rsc",
     "prefetchSegmentHeader": "next-router-segment-prefetch",
     "prefetchSegmentSuffix": ".segment.rsc",
-    "prefetchSegmentDirSuffix": ".segments"
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
   },
   "rewriteHeaders": {
     "pathHeader": "x-nextjs-rewritten-path",

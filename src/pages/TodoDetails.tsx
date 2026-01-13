@@ -67,7 +67,7 @@ const TodoDetails = () => {
         </Alert>
         <Button
           startIcon={<ArrowBackIcon />}
-          onClick={() => router.push('/')}
+          onClick={() => router.push('/todo-list')}
           sx={{ 
             mt: 2,
             background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
@@ -92,7 +92,7 @@ const TodoDetails = () => {
     }}>
       <Button
         startIcon={<ArrowBackIcon />}
-        onClick={() => router.push('/')}
+        onClick={() => router.push('/todo-list')}
         sx={{ 
           mb: 2,
           background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',

@@ -1,7 +1,8 @@
 {
+  "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
-  "/todo/[id]/page": "/todo/[id]",
+  "/login/page": "/login",
   "/page": "/",
   "/todo-list/page": "/todo-list",
-  "/login/page": "/login"
+  "/todo/[id]/page": "/todo/[id]"
 }
